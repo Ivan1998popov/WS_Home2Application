@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WS_Home2Application</string>
+
+
+    <string name="login">admin</string>
+    <string name="password">1234</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_bottom_navigation">BottomNavigationActivity</string>
+    <string name="title_shekel">Шекель</string>
+    <string name="title_tenge">Тенге</string>
+    <string name="title_euro">Евро</string>
+
+
+</resources>
