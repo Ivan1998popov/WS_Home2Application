@@ -55,7 +55,7 @@ public class ShekelFragment extends Fragment {
                         .getSupportFragmentManager().beginTransaction();
                 RublesFragment rublesFragment = new RublesFragment();
                 rublesFragment.setArguments(toRubles);
-                fragmentTransaction.replace(R.id.container1, rublesFragment);
+                fragmentTransaction.replace(R.id.container, rublesFragment);
                 fragmentTransaction.commit();
                 closeVirtualKeywords();
             }

@@ -70,18 +70,18 @@ public class NavigationDrawerActivity extends AppCompatActivity
             FragmentTransaction fragmentTransactionTenge = getSupportFragmentManager().beginTransaction();
             RublesFragment rublesFragment = new RublesFragment();
             rublesFragment.setArguments(bundle);
-            fragmentTransactionTenge.replace(R.id.container1, rublesFragment);
+            fragmentTransactionTenge.replace(R.id.container, rublesFragment);
             TengeFragment tengeFragment =new TengeFragment();
-            fragmentTransactionTenge.replace(R.id.container2, tengeFragment).commit();
+            fragmentTransactionTenge.add(R.id.container, tengeFragment).commit();
         } else if (id == R.id.euro) {
 
             bundle.putString(TAG_ID_TRANSLATE,"euro");
             FragmentTransaction fragmentTransactionEuro = getSupportFragmentManager().beginTransaction();
             RublesFragment rublesFragment = new RublesFragment();
             rublesFragment.setArguments(bundle);
-            fragmentTransactionEuro.replace(R.id.container1, rublesFragment);
+            fragmentTransactionEuro.replace(R.id.container, rublesFragment);
             EuroFragment euroFragment =new EuroFragment();
-            fragmentTransactionEuro.replace(R.id.container2, euroFragment).commit();
+            fragmentTransactionEuro.add(R.id.container, euroFragment).commit();
 
         } else if (id == R.id.shekel) {
 
@@ -89,9 +89,9 @@ public class NavigationDrawerActivity extends AppCompatActivity
             FragmentTransaction fragmentTransactionShekel = getSupportFragmentManager().beginTransaction();
             RublesFragment rublesFragment = new RublesFragment();
             rublesFragment.setArguments(bundle);
-            fragmentTransactionShekel.replace(R.id.container1, rublesFragment);
+            fragmentTransactionShekel.replace(R.id.container, rublesFragment);
             ShekelFragment shekelFragment = new ShekelFragment();
-            fragmentTransactionShekel.replace(R.id.container2, shekelFragment).commit();
+            fragmentTransactionShekel.add(R.id.container, shekelFragment).commit();
 
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

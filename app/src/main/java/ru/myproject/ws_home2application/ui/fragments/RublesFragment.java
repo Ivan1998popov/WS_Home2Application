@@ -91,7 +91,7 @@ public class RublesFragment extends Fragment {
                         .getSupportFragmentManager().beginTransaction();
                 ShekelFragment shekelFragment = new ShekelFragment();
                 shekelFragment.setArguments(bundle);
-                fragmentTransactionShekel.replace(R.id.container2, shekelFragment).commit();
+                fragmentTransactionShekel.replace(R.id.container, shekelFragment).commit();
 
                 break;
             case "euro":
@@ -101,7 +101,7 @@ public class RublesFragment extends Fragment {
                         .getSupportFragmentManager().beginTransaction();
                 EuroFragment euroFragment =new EuroFragment();
                 euroFragment.setArguments(bundle);
-                fragmentTransactionEuro.replace(R.id.container2, euroFragment).commit();
+                fragmentTransactionEuro.replace(R.id.container, euroFragment).commit();
                 break;
             case "tenge":
                 double tenge = rubles *5.85;
@@ -110,7 +110,7 @@ public class RublesFragment extends Fragment {
                         .getSupportFragmentManager().beginTransaction();
                 TengeFragment tengeFragment =new TengeFragment();
                 tengeFragment.setArguments(bundle);
-                fragmentTransactionTenge.replace(R.id.container2, tengeFragment).commit();
+                fragmentTransactionTenge.replace(R.id.container, tengeFragment).commit();
                 break;
         }
 
